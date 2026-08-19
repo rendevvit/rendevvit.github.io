@@ -1507,8 +1507,8 @@ body[data-mode="scripting"] .proof-stack[data-track="scripting"] {
 }
 
 html.dark {
-  --paper: #121212;
-  --paper-raised: #181818;
+  --paper: #0d0d0d;
+  --paper-raised: #151515;
   --ink: #fff;
   --quiet: rgba(255, 255, 255, .7);
   --rule: #fff;
