@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ren | Roblox Scripter and Programmer</title>
+    <meta
+      name="description"
+      content="Portfolio for Ren, a Roblox scripter and programmer focused on scalable systems, gameplay architecture, and backend development."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Instrument+Sans:wdth,wght@75..100,400..700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css?v=20260606-scroll-perf" />
+  </head>
+  <body data-mode="scripting" data-choice="complete">
+    <div class="page-shell">
+      <header class="site-header">
+        <a class="site-wordmark" href="#home" aria-label="Ren portfolio home">
+          <img class="profile-photo" src="assets/profile/ren.jpg" alt="Ren" />
+          <span class="wordmark-name">ren.</span>
+          <svg class="verified-mark" viewBox="0 0 24 24" aria-label="Verified" role="img"><path fill="currentColor" d="M22 12l-2.15 2.46.3 3.26-3.2.73L15.27 21 12 19.59 8.73 21l-1.68-2.55-3.2-.73.3-3.26L2 12l2.15-2.46-.3-3.26 3.2-.73L8.73 3 12 4.41 15.27 3l1.68 2.55 3.2.73-.3 3.26L22 12zm-11.1 3.2l5-5-1.4-1.4-3.6 3.59-1.5-1.5L8 12.3l2.9 2.9z"/></svg>
+        </a>
+        <div class="mode-switch" aria-label="Switch portfolio type">
+          <button class="is-active" type="button" data-portfolio-mode="scripting" data-mode-target="#home">Scripting</button>
+          <button type="button" data-portfolio-mode="programming" data-mode-target="#home">Programming</button>
+        </div>
+
+        <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">
+          Menu
+        </button>
+
+        <button class="theme-toggle" type="button" aria-label="Switch to dark theme" aria-pressed="false">
+          <span aria-hidden="true">◐</span>
+        </button>
+
+        <nav id="site-nav" class="site-nav">
+          <a href="#home"><span>01</span> Home</a>
+          <a data-track="scripting" href="#about"><span>02</span> About Me</a>
+          <a data-track="scripting" href="#skills"><span>03</span> Skills</a>
+          <a data-track="scripting" href="#games"><span>04</span> Games</a>
+          <a data-track="scripting" href="#projects"><span>05</span> Projects</a>
+          <a data-track="programming" href="#programming-about"><span>02</span> About Me</a>
+          <a data-track="programming" href="#programming-skills"><span>03</span> Skills</a>
+          <a data-track="programming" href="#programming-work"><span>04</span> Work</a>
+          <a class="nav-cta" href="#contact"><span>07</span> Contact</a>
+        </nav>
+      </header>
+
+      <main>
+        <section id="home" class="hero section-panel">
+          <div class="hero-grid">
+            <div class="hero-copy reveal">
+              <h1 class="hero-title">Ren</h1>
+              <p class="hero-subtitle">Roblox Scripter</p>
+              <p class="hero-text">I build scalable systems, with a wide variety of experience.</p>
+              <div class="hero-actions">
+                <a class="button button-primary hero-work-link" href="#projects">View Selected Work</a>
+                <a class="button button-accent" href="#contact">Contact Me</a>
+              </div>
+            </div>
+
+            <div class="hero-proof reveal">
+              <div class="proof-stack" data-track="scripting">
+                <article class="proof-card proof-card-large">
+                  <span>Contributed to</span>
+                  <strong>35M+ <small>visits</small></strong>
+                  <p>across Roblox experiences</p>
+                </article>
+                <article class="proof-card">
+                  <span>Commissioned work</span>
+                  <strong>$x,xxx+</strong>
+                  <p>earned this year</p>
+                </article>
+              </div>
+
+              <div class="proof-stack" data-track="programming">
+                <a class="proof-card proof-card-large" href="https://batangtechno.vercel.app/" target="_blank" rel="noreferrer">
+                  <span>National finalist</span>
+                  <strong>Batang Techno</strong>
+                  <p>hackathon challenge finalist</p>
+                </a>
+                <article class="proof-card">
+                  <span>Product reach</span>
+                  <strong>200K+ <small>users</small></strong>
+                  <p>reached through shipped extension work</p>
+                </article>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="about" class="content-section" data-track="scripting">
+          <div class="section-intro reveal">
+            <p class="section-number">02</p>
+            <h2>Why Me</h2>
+          </div>
+
+          <div class="three-up-grid">
+            <article class="feature-card reveal">
+              <span class="feature-icon">01</span>
+              <h3>Shipped across real Roblox projects</h3>
+              <p>
+                I have shipped features in playable Roblox games that reached real players and supported strong user adoption.
+              </p>
+            </article>
+
+            <article class="feature-card reveal">
+              <span class="feature-icon">02</span>
+              <h3>Flexible inside existing systems</h3>
+              <p>
+                I can adapt to an existing workspace, understand how the current systems fit together, and still build cleanly without making future updates harder.
+              </p>
+            </article>
+
+            <article class="feature-card reveal">
+              <span class="feature-icon">03</span>
+              <h3>Clear communication and delivery</h3>
+              <p>
+                Regular updates, clear change logs, and technical decisions explained in a way clients and teammates can actually follow.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section id="skills" class="content-section" data-track="scripting">
+          <div class="section-intro reveal">
+            <p class="section-number">03</p>
+            <h2>Skills</h2>
+          </div>
+
+          <div class="skills-panels">
+            <div class="skills-panel reveal">
+              <ul class="skill-list">
+                <li>Backend systems for progression loops, currencies, rewards, shops, quests, and unlock flows</li>
+                <li>Data and save architecture for inventories, placement, pets, rebirths, stats, and player-owned state</li>
+                <li>Client-server gameplay integration with remotes, validation, replication, and secure server authority</li>
+                <li>Live debugging across UI, gameplay, data loading, race conditions, and release-blocking edge cases</li>
+                <li>Optimization and cleanup for existing Roblox codebases without breaking shipped behavior</li>
+              </ul>
+            </div>
+
+            <div class="skills-panel reveal">
+              <ul class="skill-list">
+                <li>Roblox services: DataStoreService, MemoryStoreService, MessagingService, TeleportService, MarketplaceService, HttpService, CollectionService, AnalyticsService</li>
+                <li>Data layers: ProfileService / ProfileStore-style patterns, DataStore2-style migration awareness</li>
+                <li>Frameworks and utilities: Knit, Promise, Trove / Janitor, Signal, ReplicaService, Net-style networking</li>
+                <li>UI and tooling: Fusion, Roact / React-style component workflows, Wally packages, Rojo project structure</li>
+                <li>Production habits clients care about: typed Luau, modular services, clear APIs, and readable handoff notes</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section id="games" class="content-section" data-track="scripting">
+          <div class="section-intro reveal">
+            <p class="section-number">04</p>
+            <h2>Games</h2>
+            <p class="section-copy">Live Roblox experiences I have worked on.</p>
+          </div>
+
+          <div class="game-grid">
+            <article class="game-card reveal">
+              <a class="game-thumb" href="https://www.roblox.com/games/136848130917777/Compshop" target="_blank" rel="noreferrer">
+                <img class="game-thumb-image" alt="Compshop thumbnail" src="https://tr.rbxcdn.com/180DAY-b2a546e79ccef9133d52a8564a1f75d4/500/280/Image/Jpeg/noFilter" loading="lazy" decoding="async" />
+                <div class="game-thumb-overlay"><span>Compshop</span></div>
+              </a>
+              <div class="game-body">
+                <h3>Compshop</h3>
+                <div class="game-stats"><div><strong>Visits</strong><span>5M+</span></div></div>
+                <p>Live lead scripter, owning the scripting side of updates—from gameplay and systems work through QA, deployment, and live follow-up.</p>
+                <div class="game-actions"><a class="button button-small" href="https://www.roblox.com/games/136848130917777/Compshop" target="_blank" rel="noreferrer">Play on Roblox</a></div>
+              </div>
+            </article>
+            <article class="game-card reveal">
+              <a class="game-thumb" href="https://www.roblox.com/games/2369647980/TOWER-DEFENDERS" target="_blank" rel="noreferrer">
+                <img
+                  class="game-thumb-image"
+                  alt="Tower Defenders thumbnail"
+                  src="https://tr.rbxcdn.com/180DAY-33d0dff1c0b2c13d7e423712336d656f/768/432/Image/Png/noFilter"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <div class="game-thumb-overlay">
+                  <span>Tower Defenders</span>
+                </div>
+              </a>
+              <div class="game-body">
+                <h3>Tower Defenders</h3>
+                <div class="game-stats">
+                  <div>
+                    <strong>Visits</strong>
+                    <span>35M+</span>
+                  </div>
+                </div>
+                <p>Modernized the development workflow by migrating the experience to Rojo and organizing its scripts, assets, and shared code for source-controlled iteration.</p>
+                <div class="game-actions">
+                  <a class="button button-small" href="https://www.roblox.com/games/2369647980/TOWER-DEFENDERS" target="_blank" rel="noreferrer">Play on Roblox</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="game-card reveal">
+              <a class="game-thumb" href="https://www.roblox.com/games/86053795421622/Hunt-A-Brainrot" target="_blank" rel="noreferrer">
+                <img
+                  id="hunt-a-brainrot-thumbnail"
+                  class="game-thumb-image"
+                  alt="Hunt A Brainrot thumbnail"
+                  src="https://tr.rbxcdn.com/180DAY-c3be50adda54d73b33164f3de54fbb59/500/280/Image/Jpeg/noFilter"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <div class="game-thumb-overlay">
+                  <span>Hunt A Brainrot</span>
+                </div>
+              </a>
+              <div class="game-body">
+                <h3>Hunt A Brainrot</h3>
+                <div class="game-stats">
+                  <div>
+                    <strong>Visits</strong>
+                    <span id="hunt-a-brainrot-visits">170K</span>
+                  </div>
+                </div>
+                <p>Shipped and refined features across quests, shops, HUD and inventory flows, currency UI, weather, and live gameplay fixes.</p>
+                <div class="game-actions">
+                  <a class="button button-small" href="https://www.roblox.com/games/86053795421622/Hunt-A-Brainrot" target="_blank" rel="noreferrer">Play on Roblox</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="game-card reveal">
+              <a class="game-thumb" href="https://www.roblox.com/games/72935092857928/Escape-LAVA-For-Cars" target="_blank" rel="noreferrer">
+                <img
+                  class="game-thumb-image"
+                  alt="Escape LAVA For Cars thumbnail"
+                  src="https://tr.rbxcdn.com/180DAY-90c0a937077125afd04c850d080d8a2d/500/280/Image/Jpeg/noFilter"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <div class="game-thumb-overlay">
+                  <span>Escape LAVA For Cars!</span>
+                </div>
+              </a>
+              <div class="game-body">
+                <h3>Escape LAVA For Cars!</h3>
+                <div class="game-stats">
+                  <div>
+                    <strong>Visits</strong>
+                    <span>8K</span>
+                  </div>
+                </div>
+                <p>Polished and shipped gameplay features, including custom speed handling and live reliability fixes.</p>
+                <div class="game-actions">
+                  <a class="button button-small" href="https://www.roblox.com/games/72935092857928/Escape-LAVA-For-Cars" target="_blank" rel="noreferrer">Play on Roblox</a>
+                </div>
+              </div>
+            </article>
+
+          </div>
+        </section>
+
+        <section id="projects" class="content-section" data-track="scripting">
+          <div class="section-intro reveal">
+            <p class="section-number">05</p>
+            <h2>Projects</h2>
+            <p class="section-copy">Selected work with in-site video demos.</p>
+          </div>
+
+          <div class="project-list">
+            <article class="project-row reveal">
+              <div class="project-preview">
+                <span>Featured work</span>
+                <img
+                  class="project-thumbnail"
+                  src="https://drive.google.com/thumbnail?id=1St6zrrJn2QpZHE_RyuYgckaH06HKVrM6&sz=w1200"
+                  alt="Horror Game Spawn Intro Sequence preview"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <button class="button button-small project-open" type="button" data-video="https://drive.google.com/file/d/1St6zrrJn2QpZHE_RyuYgckaH06HKVrM6/preview" data-title="Horror Game Spawn Intro Sequence">
+                  See Video
+                </button>
+              </div>
+              <div class="project-copy">
+                <h3>Horror Game Spawn Intro Sequence</h3>
+                <ul class="project-feature-list">
+                  <li>Client-side spawn intro sequence</li>
+                  <li>Looping rock-ring elevator shaft illusion</li>
+                  <li>Loading bar and status text flow</li>
+                  <li>Interact prompt transition into the lobby</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="project-row reveal project-row-reverse">
+              <div class="project-preview">
+                <span>Project 02</span>
+                <img
+                  class="project-thumbnail"
+                  src="https://drive.google.com/thumbnail?id=1eGm1GsZ18sGHthJc193cUg-CQwIHatBH&sz=w1200"
+                  alt="Tower Defense Elevator Teleport System preview"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <button class="button button-small project-open" type="button" data-video="https://drive.google.com/file/d/1eGm1GsZ18sGHthJc193cUg-CQwIHatBH/preview" data-title="Tower Defense Elevator Teleport System">
+                  See Video
+                </button>
+              </div>
+              <div class="project-copy">
+                <h3>Tower Defense Elevator Teleport System</h3>
+                <ul class="project-feature-list">
+                  <li>Full lobby-to-map elevator system built from scratch</li>
+                  <li>Queue, countdown, and loading handoff flow</li>
+                  <li>Camera state transitions during elevator entry</li>
+                  <li>Server-controlled teleport validation and routing</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="project-row reveal">
+              <div class="project-preview">
+                <span>Project 03</span>
+                <img
+                  class="project-thumbnail"
+                  src="https://drive.google.com/thumbnail?id=1MStFRISxkvvZPvq-0Ef4SH2bLurx5qPf&sz=w1200"
+                  alt="Brainrot Tycoon Full Game Loop preview"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <button class="button button-small project-open" type="button" data-video="https://drive.google.com/file/d/1MStFRISxkvvZPvq-0Ef4SH2bLurx5qPf/preview" data-title="Brainrot Tycoon Full Game Loop">
+                  See Video
+                </button>
+              </div>
+              <div class="project-copy">
+                <h3>Brainrot Tycoon Full Game Loop</h3>
+                <ul class="project-feature-list">
+                  <li>Full tycoon progression loop</li>
+                  <li>Brainrot collection, placement, and income systems</li>
+                  <li>Mutation logic, rarity, and visual variants</li>
+                  <li>Save-load persistence across core gameplay</li>
+                  <li>Game-wide systems for a complete playable experience</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="project-row reveal project-row-reverse">
+              <div class="project-preview">
+                <span>Project 04</span>
+                <img
+                  class="project-thumbnail"
+                  src="https://drive.google.com/thumbnail?id=1U0yo-PoscRCK28qgEREgrqktZwRqcNj4&sz=w1200"
+                  alt="Full Combat System and NPC AI preview"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <button class="button button-small project-open" type="button" data-video="https://drive.google.com/file/d/1U0yo-PoscRCK28qgEREgrqktZwRqcNj4/preview" data-title="Full Combat System and NPC AI">
+                  See Video
+                </button>
+              </div>
+              <div class="project-copy">
+                <h3>Full Combat System and NPC AI</h3>
+                <ul class="project-feature-list">
+                  <li>Adaptive NPC chase and defense AI</li>
+                  <li>M1 combo chain with hit windows</li>
+                  <li>Block, parry, and guard break flow</li>
+                  <li>Stamina-based sprinting and dashing</li>
+                  <li>Server-authoritative combat states</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="project-row reveal">
+              <div class="project-preview">
+                <span>Project 05</span>
+                <img
+                  class="project-thumbnail"
+                  src="https://drive.google.com/thumbnail?id=1fjxLFRWSz5LZ_y_MbaoRSqXik0I8q-3S&sz=w1200"
+                  alt="Meme Maker Party Game System preview"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <button class="button button-small project-open" type="button" data-video="https://drive.google.com/file/d/1fjxLFRWSz5LZ_y_MbaoRSqXik0I8q-3S/preview" data-title="Meme Maker Party Game System">
+                  See Video
+                </button>
+              </div>
+              <div class="project-copy">
+                <h3>Meme Maker Party Game System</h3>
+                <ul class="project-feature-list">
+                  <li>Multiplayer caption round loop</li>
+                  <li>113-template meme selection system</li>
+                  <li>Voting, reactions, and podium results</li>
+                  <li>Persistent economy and cosmetics</li>
+                  <li>Custom UI for editor, shops, and results</li>
+                  <li>Private-server bot support</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="project-row reveal project-row-reverse">
+              <div class="project-preview">
+                <span>Project 06</span>
+                <img
+                  class="project-thumbnail"
+                  src="https://drive.google.com/thumbnail?id=1pf-B0dbshJHzD2HlnomrMhMZyW61wl_O&sz=w1200"
+                  alt="Anime Tower Defense Inventory and Monetization Systems preview"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <button class="button button-small project-open" type="button" data-video="https://drive.google.com/file/d/1pf-B0dbshJHzD2HlnomrMhMZyW61wl_O/preview" data-title="Anime Tower Defense Inventory and Monetization Systems">
+                  See Video
+                </button>
+              </div>
+              <div class="project-copy">
+                <h3>Anime Tower Defense Inventory &amp; Monetization Systems</h3>
+                <ul class="project-feature-list">
+                  <li>Unit inventory and equip flow</li>
+                  <li>Summon, trait, and shop UI integration</li>
+                  <li>Damage, range, and cooldown stat rerolls</li>
+                  <li>Gamepass and product purchase flows</li>
+                  <li>Daily rewards, capsules, and merchants</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section id="systems" class="content-section" data-track="scripting" hidden>
+          <div class="section-intro reveal">
+            <p class="section-number">06</p>
+            <h2>Systems</h2>
+            <p class="section-copy">Click any system group to view the exact work covered.</p>
+          </div>
+
+          <div class="systems-list">
+            <button class="system-trigger reveal" type="button" data-system="combat-action-systems">
+              <span>01</span>
+              <div>
+                <h3>Combat / action systems</h3>
+                <p>Fighting game systems, movement, replication, and combat handling.</p>
+              </div>
+            </button>
+
+            <button class="system-trigger reveal" type="button" data-system="brainrot-simulator-progression-systems">
+              <span>02</span>
+              <div>
+                <h3>Brainrot / simulator / progression systems</h3>
+                <p>Collectibles, mutations, quests, shops, and progression loops.</p>
+              </div>
+            </button>
+
+            <button class="system-trigger reveal" type="button" data-system="tycoon-simulator-systems">
+              <span>03</span>
+              <div>
+                <h3>Tycoon / simulator systems</h3>
+                <p>Placement flow, economy handling, pets, rebirth, and save systems.</p>
+              </div>
+            </button>
+
+            <button class="system-trigger reveal" type="button" data-system="tower-defense-wave-systems">
+              <span>04</span>
+              <div>
+                <h3>Tower defense / wave systems</h3>
+                <p>Wave spawning, pathing, base damage flow, and turret combat.</p>
+              </div>
+            </button>
+
+            <button class="system-trigger reveal" type="button" data-system="tower-defense-live-game-systems">
+              <span>05</span>
+              <div>
+                <h3>Tower defense live game systems</h3>
+                <p>Live fixes for teleports, rerolls, inventory integration, and production repair work.</p>
+              </div>
+            </button>
+          </div>
+        </section>
+
+        <section id="programming-about" class="content-section" data-track="programming">
+          <div class="section-intro reveal">
+            <p class="section-number">02</p>
+            <h2>Why Me</h2>
+          </div>
+
+          <div class="three-up-grid">
+            <article class="feature-card reveal">
+              <span class="feature-icon">01</span>
+              <h3>Built for real users</h3>
+              <p>
+                Hands-on product work reaching 200K+ users, with a focus on shipping updates that feel smooth, useful, and reliable instead of just looking good in a demo.
+              </p>
+            </article>
+
+            <article class="feature-card reveal">
+              <span class="feature-icon">02</span>
+              <h3>Shipped projects and finalist experience</h3>
+              <p>
+                Real shipped projects across web, extensions, and product tooling, plus national hackathon finalist experience from building under pressure and presenting clearly.
+              </p>
+            </article>
+
+            <article class="feature-card reveal">
+              <span class="feature-icon">03</span>
+              <h3>Clear communication and delivery</h3>
+              <p>
+                Regular updates, clear change logs, and technical decisions explained in a way clients and teammates can actually follow.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section id="programming-skills" class="content-section" data-track="programming">
+          <div class="section-intro reveal">
+            <p class="section-number">03</p>
+            <h2>Programming Skills</h2>
+          </div>
+
+          <div class="tech-grid reveal">
+            <div class="tech-row">
+              <article class="tech-card">
+                <img src="https://cdn.simpleicons.org/javascript/F7DF1E" alt="" loading="lazy" decoding="async" />
+                <span>JavaScript</span>
+              </article>
+              <article class="tech-card">
+                <img src="https://cdn.simpleicons.org/typescript/3178C6" alt="" loading="lazy" decoding="async" />
+                <span>TypeScript</span>
+              </article>
+              <article class="tech-card">
+                <img src="https://cdn.simpleicons.org/dart/0175C2" alt="" loading="lazy" decoding="async" />
+                <span>Dart</span>
+              </article>
+              <article class="tech-card">
+                <img src="https://cdn.simpleicons.org/react/61DAFB" alt="" loading="lazy" decoding="async" />
+                <span>React</span>
+              </article>
+              <article class="tech-card">
+                <img src="https://cdn.simpleicons.org/flutter/02569B" alt="" loading="lazy" decoding="async" />
+                <span>Flutter</span>
+              </article>
+              <article class="tech-card">
+                <img src="https://cdn.simpleicons.org/vite/646CFF" alt="" loading="lazy" decoding="async" />
+                <span>Vite</span>
+              </article>
+              <article class="tech-card">
+                <img src="https://cdn.simpleicons.org/pwa/5A0FC8" alt="" loading="lazy" decoding="async" />
+                <span>PWA</span>
+              </article>
+            </div>
+
+            <div class="tech-row">
+              <article class="tech-card">
+                <img src="https://cdn.simpleicons.org/swift/F05138" alt="" loading="lazy" decoding="async" />
+                <span>Swift</span>
+              </article>
+              <article class="tech-card">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/objectivec/objectivec-plain.svg" alt="" loading="lazy" decoding="async" />
+                <span>Objective-C</span>
+              </article>
+              <article class="tech-card">
+                <img src="https://cdn.simpleicons.org/kotlin/7F52FF" alt="" loading="lazy" decoding="async" />
+                <span>Kotlin</span>
+              </article>
+              <article class="tech-card">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/playwright/playwright-original.svg" alt="" loading="lazy" decoding="async" />
+                <span>Playwright</span>
+              </article>
+              <article class="tech-card">
+                <img src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/remotion/default.svg" alt="" loading="lazy" decoding="async" />
+                <span>Remotion</span>
+              </article>
+              <article class="tech-card">
+                <img src="https://cdn.simpleicons.org/supabase/3ECF8E" alt="" loading="lazy" decoding="async" />
+                <span>Supabase</span>
+              </article>
+            </div>
+
+            <div class="tech-row">
+              <article class="tech-card">
+                <img src="https://cdn.simpleicons.org/python/3776AB" alt="" loading="lazy" decoding="async" />
+                <span>Python</span>
+              </article>
+              <article class="tech-card">
+                <img src="https://cdn.simpleicons.org/nodedotjs/5FA04E" alt="" loading="lazy" decoding="async" />
+                <span>Node.js</span>
+              </article>
+              <article class="tech-card">
+                <img class="tech-icon-inverse" src="https://cdn.simpleicons.org/express/000000" alt="" loading="lazy" decoding="async" />
+                <span>Express</span>
+              </article>
+              <article class="tech-card">
+                <img src="https://cdn.simpleicons.org/gradle/4B89DC" alt="" loading="lazy" decoding="async" />
+                <span>Gradle</span>
+              </article>
+              <article class="tech-card">
+                <img src="https://cdn.simpleicons.org/postgresql/4169E1" alt="" loading="lazy" decoding="async" />
+                <span>Postgres</span>
+              </article>
+            </div>
+
+            <div class="tech-row">
+              <article class="tech-card">
+                <img src="https://cdn.simpleicons.org/sqlite/2797D6" alt="" loading="lazy" decoding="async" />
+                <span>SQLite</span>
+              </article>
+              <article class="tech-card">
+                <img src="https://cdn.simpleicons.org/googlechrome/4285F4" alt="" loading="lazy" decoding="async" />
+                <span>Chrome MV3</span>
+              </article>
+              <article class="tech-card">
+                <img class="tech-icon-inverse" src="https://cdn.simpleicons.org/threedotjs/000000" alt="" loading="lazy" decoding="async" />
+                <span>Three.js</span>
+              </article>
+              <article class="tech-card">
+                <img class="tech-icon-inverse" src="https://cdn.simpleicons.org/roblox/000000" alt="" loading="lazy" decoding="async" />
+                <span>Roblox Web APIs</span>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section id="programming-work" class="content-section" data-track="programming">
+          <div class="section-intro reveal">
+            <p class="section-number">04</p>
+            <h2>Programming Work</h2>
+            <p class="section-copy">Shipped products and full builds across extensions, hackathon software, and mobile app development.</p>
+          </div>
+
+          <div class="project-list">
+            <article class="project-row reveal">
+              <div class="project-preview programming-preview project-logo-preview">
+                <img class="project-logo" src="assets/projects/roearn-icon.png" alt="RoEarn extension icon" loading="lazy" decoding="async" />
+              </div>
+              <div class="project-copy">
+                <div class="project-heading"><h3>RoEarn Custom Avatar Creator</h3><div class="project-tech" aria-label="Built with Three.js, JavaScript, and Chrome"><img src="https://cdn.simpleicons.org/threedotjs/000000" alt="Three.js" /><img src="https://cdn.simpleicons.org/javascript/F7DF1E" alt="JavaScript" /><img src="https://cdn.simpleicons.org/googlechrome/4285F4" alt="Chrome" /></div></div>
+                <p>
+                  I shipped the Roblox renderer feature for a Chrome extension used by more than 200,000 people. The work touched real production constraints:
+                  Three.js rendering, Roblox avatar assets, extension packaging, and making the preview feel reliable for everyday users.
+                </p>
+                <div class="project-actions">
+                  <a class="button button-small" href="https://chromewebstore.google.com/detail/roearn-custom-avatar-crea/fooenmopnfaejehogdbmegaleanpdcea" target="_blank" rel="noreferrer">Chrome Web Store</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-row reveal project-row-reverse">
+              <div class="project-preview programming-preview project-logo-preview">
+                <img class="project-logo" src="assets/projects/koberko-icon.svg" alt="KoberKo app icon" loading="lazy" decoding="async" />
+              </div>
+              <div class="project-copy">
+                <div class="project-heading"><h3>KoberKo</h3><div class="project-tech" aria-label="Built with React, Vite, and Supabase"><img src="https://cdn.simpleicons.org/react/61DAFB" alt="React" /><img src="https://cdn.simpleicons.org/vite/646CFF" alt="Vite" /><img src="https://cdn.simpleicons.org/supabase/3ECF8E" alt="Supabase" /></div></div>
+                <p>
+                  I built KoberKo end to end: a healthcare navigation PWA for PhilHealth, hospital billing, reimbursement, facility search, and patient guidance.
+                  It combines React, Vite, local datasets, rule-based engines, and assisted chat flows, and it earned me a national hackathon finalist seat.
+                </p>
+                <div class="project-actions">
+                  <a class="button button-small" href="https://github.com/rendevvit/KoberKo-" target="_blank" rel="noreferrer">GitHub</a>
+                  <a class="button button-small" href="https://batangtechno.vercel.app/" target="_blank" rel="noreferrer">Hackathon</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-row reveal">
+              <div class="project-preview programming-preview project-logo-preview">
+                <img class="project-logo" src="assets/projects/spotly-icon.png" alt="Spotly app icon" loading="lazy" decoding="async" />
+              </div>
+              <div class="project-copy">
+                <div class="project-heading"><h3>Spotly</h3><div class="project-tech" aria-label="Built with Flutter, Dart, and Supabase"><img src="https://cdn.simpleicons.org/flutter/02569B" alt="Flutter" /><img src="https://cdn.simpleicons.org/dart/0175C2" alt="Dart" /><img src="https://cdn.simpleicons.org/supabase/3ECF8E" alt="Supabase" /></div></div>
+                <p>
+                  I built Spotly as a thesis project: a curated study-spot discovery app with Flutter, Supabase, location-aware venue search, saved lists,
+                  feedback flows, local caching, and a backend schema designed around real venue data instead of static mock screens.
+                </p>
+                <div class="project-actions">
+                  <a class="button button-small" href="https://github.com/rendevvit/Spotly-" target="_blank" rel="noreferrer">GitHub</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section id="contact" class="content-section contact-section">
+          <div class="section-intro reveal">
+            <p class="section-number">07</p>
+            <h2>Contact</h2>
+            <p class="section-copy">Reach out for Roblox scripting, systems work, backend implementation, or web projects.</p>
+          </div>
+
+          <div class="contact-grid reveal">
+            <a class="contact-card" href="https://www.roblox.com/users/1859722646/profile" target="_blank" rel="noreferrer">
+              <i class="brand-icon brand-icon-roblox" aria-hidden="true"></i>
+              <span>Roblox</span>
+              <strong>Ren</strong>
+            </a>
+            <a class="contact-card" href="https://discord.com/users/863377260055887882" target="_blank" rel="noreferrer">
+              <i class="brand-icon brand-icon-discord" aria-hidden="true"></i>
+              <span>Discord</span>
+              <strong>Ren</strong>
+            </a>
+            <a class="contact-card" href="https://github.com/rendevvit" target="_blank" rel="noreferrer">
+              <i class="brand-icon brand-icon-github" aria-hidden="true"></i>
+              <span>GitHub</span>
+              <strong>Ren</strong>
+            </a>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <div class="modal-backdrop" hidden>
+      <div class="systems-modal" role="dialog" aria-modal="true" aria-labelledby="systems-modal-title">
+        <div class="modal-header">
+          <div>
+            <p class="section-number modal-number">06</p>
+            <h2 id="systems-modal-title">System Title</h2>
+          </div>
+          <button class="modal-close" type="button" aria-label="Close systems modal">Close</button>
+        </div>
+        <div class="modal-body">
+          <ul class="modal-system-list"></ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="video-modal-backdrop" hidden>
+      <div class="video-modal" role="dialog" aria-modal="true" aria-labelledby="video-modal-title">
+        <div class="modal-header">
+          <div>
+            <p class="section-number modal-number">05</p>
+            <h2 id="video-modal-title">Project Video</h2>
+          </div>
+          <button class="video-modal-close" type="button" aria-label="Close project video">Close</button>
+        </div>
+        <div class="video-modal-body">
+          <iframe class="video-modal-frame" src="" title="Project video" allow="autoplay" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js?v=20260606-scroll-perf"></script>
+  </body>
+</html>
