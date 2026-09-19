@@ -584,7 +584,8 @@ body.is-mode-transitioning main > .content-section {
   grid-column: 2;
   margin-left: 0;
   line-height: 0.9;
-  letter-spacing: 0;
+  letter-spacing: inherit;
+  word-spacing: 0.2em;
   white-space: nowrap;
 }
 
