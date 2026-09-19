@@ -558,12 +558,18 @@ body.is-mode-transitioning main > .content-section {
   vertical-align: baseline;
 }
 
-.proof-card strong .proof-label-stacked {
-  display: inline-flex;
-  flex-direction: column;
-  margin-left: 6px;
+.proof-card strong.proof-stat-stacked {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  white-space: normal;
+}
+
+.proof-card strong.proof-stat-stacked .proof-label-stacked {
+  display: block;
+  margin-left: 0;
   line-height: 0.9;
-  vertical-align: middle;
+  white-space: nowrap;
 }
 
 .proof-card p {
