@@ -559,16 +559,37 @@ body.is-mode-transitioning main > .content-section {
 }
 
 .proof-card strong.proof-stat-stacked {
-  display: flex;
-  align-items: center;
-  gap: 6px;
+  display: inline-grid;
+  grid-template-columns: auto max-content;
+  grid-template-rows: auto auto;
+  column-gap: 6px;
+  row-gap: 1px;
   white-space: normal;
 }
 
-.proof-card strong.proof-stat-stacked .proof-label-stacked {
+.proof-card strong.proof-stat-stacked .proof-stat-number {
   display: block;
+  grid-column: 1;
+  grid-row: 1 / span 2;
+  align-self: end;
   margin-left: 0;
+  color: inherit;
+  font: inherit;
+  letter-spacing: inherit;
+  text-transform: none;
+}
+
+.proof-card strong.proof-stat-stacked .proof-stat-label {
+  display: block;
+  grid-column: 2;
+  margin-left: 0;
+  color: var(--accent-muted);
+  font-family: inherit;
+  font-size: 0.44em;
+  font-weight: 700;
   line-height: 0.9;
+  letter-spacing: 0.01em;
+  text-transform: none;
   white-space: nowrap;
 }
 
