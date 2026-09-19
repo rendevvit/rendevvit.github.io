@@ -558,6 +558,14 @@ body.is-mode-transitioning main > .content-section {
   vertical-align: baseline;
 }
 
+.proof-card strong .proof-label-stacked {
+  display: inline-flex;
+  flex-direction: column;
+  margin-left: 6px;
+  line-height: 0.9;
+  vertical-align: middle;
+}
+
 .proof-card p {
   margin: 12px 0 0;
   color: var(--muted);
