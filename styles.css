@@ -583,13 +583,8 @@ body.is-mode-transitioning main > .content-section {
   display: block;
   grid-column: 2;
   margin-left: 0;
-  color: var(--accent-muted);
-  font-family: inherit;
-  font-size: 0.44em;
-  font-weight: 700;
   line-height: 0.9;
-  letter-spacing: 0.01em;
-  text-transform: none;
+  letter-spacing: 0;
   white-space: nowrap;
 }
 
