@@ -1770,6 +1770,7 @@ main {
 .project-logo-preview::after { display: none; }
 .project-logo { width: min(180px, 60%); max-height: 180px; filter: none; }
 .project-preview span { border-color: var(--rule); border-radius: 999px; background: var(--paper); color: var(--ink); box-shadow: none; }
+.project-preview .project-open { position: absolute; right: 18px; bottom: 18px; z-index: 1; }
 
 .project-heading { display: flex; align-items: center; flex-wrap: wrap; gap: 10px 14px; margin-bottom: 12px; }
 .project-heading h3 { margin: 0; }
@@ -1854,6 +1855,7 @@ main {
   .game-thumb-overlay { padding: 18px; }
   .game-thumb-overlay span { font-size: 1.2rem; }
   .project-preview { min-height: 150px; padding: 14px; }
+  .project-preview .project-open { right: 14px; bottom: 14px; }
   .programming-preview { min-height: 150px; }
   .project-logo { width: min(132px, 54%); max-height: 132px; }
   .project-heading { gap: 8px 10px; }
