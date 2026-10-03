@@ -199,7 +199,7 @@ const heroContent = {
 };
 
 const animateHeaderResize = (beforeWidth) => {
-  if (!siteHeader || prefersReducedMotion || window.matchMedia("(max-width: 820px)").matches) {
+  if (!siteHeader || prefersReducedMotion || window.matchMedia("(max-width: 1023px)").matches) {
     return;
   }
 
@@ -331,6 +331,7 @@ const applyPortfolioMode = (mode, shouldScroll = false, headerBeforeWidth = site
   const selectedButton = document.querySelector(`[data-portfolio-mode="${mode}"]`);
   const target = selectedButton?.dataset.modeTarget || "#home";
 
+  closeMobileNav();
   document.body.dataset.mode = mode;
   document.body.dataset.choice = "complete";
 
