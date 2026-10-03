@@ -1820,7 +1820,10 @@ body[data-mode="programming"] .site-nav a[data-track="programming"] { display: f
   .game-grid,
   .project-list { gap: 26px; }
 
-  .hero { padding: clamp(34px, 9vw, 46px) 0; }
+  .hero {
+    min-height: min(540px, calc(100svh - 85px));
+    padding: clamp(34px, 9vw, 46px) 0;
+  }
   .hero-grid {
     grid-template-areas:
       "intro proof"
