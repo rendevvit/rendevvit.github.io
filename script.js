@@ -346,7 +346,7 @@ const applyPortfolioMode = (mode, shouldScroll = false, headerBeforeWidth = site
   });
 
   if (heroWorkLink) {
-    heroWorkLink.href = mode === "programming" ? "#programming-work" : "#projects";
+    heroWorkLink.href = mode === "programming" ? "#programming-work" : "#games";
   }
 
   if (heroTitle && heroSubtitle && heroText) {
