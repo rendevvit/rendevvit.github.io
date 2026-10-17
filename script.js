@@ -11,6 +11,8 @@ const videoModalBackdrop = document.querySelector(".video-modal-backdrop");
 const videoModalTitle = document.querySelector("#video-modal-title");
 const videoModalFrame = document.querySelector(".video-modal-frame");
 const videoModalClose = document.querySelector(".video-modal-close");
+const videoModalCategory = document.querySelector(".showcase-viewer-category");
+const videoModalDescription = document.querySelector(".showcase-viewer-description");
 const projectTriggers = document.querySelectorAll(".project-open");
 const systemTriggers = document.querySelectorAll(".system-trigger");
 const modeButtons = document.querySelectorAll("[data-portfolio-mode]");
@@ -30,6 +32,8 @@ let entryTransitionTimeout = 0;
 let scrollAnimationFrame = 0;
 let scrollSettleTimeout = 0;
 let animatedScrollActive = false;
+let videoCloseTimeout = 0;
+let lastVideoTrigger = null;
 
 const applyTheme = (theme) => {
   const isDark = theme === "dark";
@@ -472,15 +476,21 @@ const closeSystemsModal = () => {
   document.body.style.overflow = "";
 };
 
-const openVideoModal = (title, src) => {
+const openVideoModal = (title, src, description, category, trigger) => {
   if (!videoModalBackdrop || !videoModalTitle || !videoModalFrame) {
     return;
   }
 
+  window.clearTimeout(videoCloseTimeout);
+  lastVideoTrigger = trigger || null;
   videoModalTitle.textContent = title;
+  videoModalCategory.textContent = category || "Selected system";
+  videoModalDescription.textContent = description || "";
   videoModalFrame.src = src;
   videoModalBackdrop.hidden = false;
+  requestAnimationFrame(() => videoModalBackdrop.classList.add("is-open"));
   document.body.style.overflow = "hidden";
+  videoModalClose?.focus({ preventScroll: true });
 };
 
 const closeVideoModal = () => {
@@ -488,9 +498,15 @@ const closeVideoModal = () => {
     return;
   }
 
-  videoModalBackdrop.hidden = true;
-  videoModalFrame.src = "";
-  document.body.style.overflow = "";
+  videoModalBackdrop.classList.remove("is-open");
+  window.clearTimeout(videoCloseTimeout);
+  videoCloseTimeout = window.setTimeout(() => {
+    videoModalBackdrop.hidden = true;
+    videoModalFrame.src = "";
+    document.body.style.overflow = "";
+    lastVideoTrigger?.focus({ preventScroll: true });
+    lastVideoTrigger = null;
+  }, prefersReducedMotion ? 0 : 280);
 };
 
 systemTriggers.forEach((trigger) => {
@@ -501,7 +517,13 @@ systemTriggers.forEach((trigger) => {
 
 projectTriggers.forEach((trigger) => {
   trigger.addEventListener("click", () => {
-    openVideoModal(trigger.dataset.title, trigger.dataset.video);
+    openVideoModal(
+      trigger.dataset.title,
+      trigger.dataset.video,
+      trigger.dataset.description,
+      trigger.dataset.category,
+      trigger
+    );
   });
 });
 
