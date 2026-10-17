@@ -59,6 +59,12 @@ const settleScrollPerformanceMode = (delay = 140) => {
   }, delay);
 };
 
+const syncHeaderMotion = () => {
+  document.body.classList.toggle("has-scrolled", window.scrollY > 18);
+};
+
+syncHeaderMotion();
+
 const easeScroll = (progress) => 1 - Math.pow(1 - progress, 4);
 
 const animateScrollTo = (targetTop, duration = 820, onComplete) => {
@@ -533,6 +539,8 @@ document.addEventListener("keydown", (event) => {
 window.addEventListener("pagehide", cancelAnimatedScroll);
 
 window.addEventListener("scroll", () => {
+  syncHeaderMotion();
+
   if (document.body.dataset.choice === "complete" && !animatedScrollActive) {
     setScrollPerformanceMode(true);
     settleScrollPerformanceMode(140);
