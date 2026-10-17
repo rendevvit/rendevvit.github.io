@@ -1639,7 +1639,7 @@ main {
 .game-thumb { min-height: 0; aspect-ratio: 16 / 9; border-right: 0; border-radius: 0; background: var(--paper-raised); }
 .game-thumb-image, .project-thumbnail { filter: none; }
 .game-thumb-overlay { background: linear-gradient(180deg, transparent 35%, rgba(0,0,0,.72)); }
-.game-thumb-overlay span { font-size: 1.4rem; }
+.game-thumb-overlay span { color: #fff; font-size: 1.4rem; text-shadow: 0 2px 16px rgba(0, 0, 0, .58); }
 .game-body { padding: 0 0 0 32px; }
 .project-row { border-radius: 0; }
 .project-preview { border: 0; border-radius: 0; background: transparent; box-shadow: none; color: var(--signal); }
@@ -1928,7 +1928,7 @@ body[data-mode="programming"] .site-nav a[data-track="programming"] { display: f
   .feature-card + .feature-card { padding-left: 28px; }
   .game-card { grid-template-columns: minmax(260px, .9fr) minmax(280px, 1.1fr); }
   .game-body { padding: 0 0 0 32px; }
-  .game-thumb { aspect-ratio: auto; }
+  .game-thumb { width: 100%; min-height: 0; aspect-ratio: 16 / 9; }
   .project-row { grid-template-columns: minmax(260px, 1fr) minmax(260px, .9fr); gap: 28px; }
   .project-row-reverse { grid-template-columns: minmax(260px, .9fr) minmax(260px, 1fr); }
   .project-row-reverse .project-preview { order: 2; }
@@ -1948,4 +1948,88 @@ body[data-mode="programming"] .site-nav a[data-track="programming"] { display: f
   .tech-card:nth-child(8) { grid-column: span 3; }
   .tech-card:nth-child(9) { grid-column: 6 / span 3; }
   .tech-card:nth-child(10) { grid-column: span 3; }
+}
+
+/* Motion keeps the editorial layout alive without competing with the work itself. */
+@media (prefers-reduced-motion: no-preference) {
+  .hero-intro.is-visible .hero-title {
+    animation: title-arrival 640ms cubic-bezier(.16, 1, .3, 1) both;
+  }
+
+  .hero-intro.is-visible .hero-subtitle,
+  .hero-intro.is-visible .hero-text {
+    animation: copy-arrival 520ms cubic-bezier(.16, 1, .3, 1) both;
+  }
+
+  .hero-intro.is-visible .hero-subtitle { animation-delay: 80ms; }
+  .hero-intro.is-visible .hero-text { animation-delay: 150ms; }
+
+  .hero-proof.is-visible .proof-card {
+    animation: proof-arrival 560ms cubic-bezier(.16, 1, .3, 1) both;
+  }
+
+  .hero-proof.is-visible .proof-card:nth-child(2) { animation-delay: 100ms; }
+  .hero-proof.is-visible .proof-card:nth-child(3) { animation-delay: 180ms; }
+
+  .hero-detail.is-visible .button {
+    animation: action-arrival 480ms cubic-bezier(.16, 1, .3, 1) both;
+  }
+
+  .hero-detail.is-visible .button + .button { animation-delay: 90ms; }
+
+  .game-card.is-visible .game-thumb-image,
+  .project-row.is-visible .project-thumbnail {
+    animation: media-arrival 720ms cubic-bezier(.16, 1, .3, 1) both;
+  }
+
+  .game-thumb-image,
+  .project-thumbnail,
+  .project-logo,
+  .game-thumb-overlay {
+    transition: transform 520ms cubic-bezier(.16, 1, .3, 1), filter 360ms ease, background 360ms ease;
+    will-change: transform;
+  }
+
+  @media (hover: hover) and (pointer: fine) {
+    .game-thumb:hover .game-thumb-image { transform: scale(1.045); }
+    .game-thumb:hover .game-thumb-overlay { background: linear-gradient(180deg, transparent 20%, rgba(0, 0, 0, .82)); }
+    .project-preview:hover .project-thumbnail,
+    .project-preview:hover .project-logo { transform: scale(1.035); }
+  }
+}
+
+@keyframes title-arrival {
+  from { opacity: 0; transform: translateY(18px) scale(.985); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+@keyframes copy-arrival {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes proof-arrival {
+  from { opacity: 0; transform: translateX(14px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes action-arrival {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes media-arrival {
+  from { opacity: 0; transform: scale(1.025); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-intro *,
+  .hero-proof *,
+  .hero-detail *,
+  .game-thumb-image,
+  .project-thumbnail,
+  .project-logo {
+    animation: none !important;
+  }
 }
