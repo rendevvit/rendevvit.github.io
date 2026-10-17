@@ -2332,7 +2332,7 @@ body[data-mode="programming"] .site-nav a[data-track="programming"] { display: f
 }
 
 .showcase-viewer-close {
-  position: absolute;
+  position: fixed;
   top: clamp(16px, 2.5vw, 28px);
   right: clamp(16px, 2.5vw, 28px);
   z-index: 2;
@@ -2372,9 +2372,10 @@ body[data-mode="programming"] .site-nav a[data-track="programming"] { display: f
   .showcase-viewer { padding: 18px 16px; }
   .showcase-viewer-content {
     grid-template-rows: auto auto;
-    align-content: center;
+    align-content: start;
     gap: 16px;
-    padding-top: 26px;
+    margin: 0;
+    padding-top: 48px;
   }
   .showcase-video-stage { width: 100%; height: auto; }
   .showcase-viewer .video-modal-frame { width: 100%; height: auto; aspect-ratio: 16 / 9; }
