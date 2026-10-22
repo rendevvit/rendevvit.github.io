@@ -22,7 +22,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Instrument+Sans:wdth,wght@75..100,400..700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css?v=20261018-showcase-catalog" />
+    <link rel="stylesheet" href="styles.css?v=20261023-services" />
   </head>
   <body data-mode="scripting" data-choice="complete">
     <div class="page-shell">
@@ -48,9 +48,9 @@
         <nav id="site-nav" class="site-nav">
           <a href="#home"><span>01</span> Home</a>
           <a data-track="scripting" href="#about"><span>02</span> About Me</a>
-          <a data-track="scripting" href="#skills"><span>03</span> Skills</a>
           <a data-track="scripting" href="#games"><span>04</span> Games</a>
           <a data-track="scripting" href="#projects"><span>05</span> Projects</a>
+          <a data-track="scripting" href="#services"><span>06</span> Services</a>
           <a data-track="programming" href="#programming-about"><span>02</span> About Me</a>
           <a data-track="programming" href="#programming-skills"><span>03</span> Skills</a>
           <a data-track="programming" href="#programming-work"><span>04</span> Work</a>
@@ -74,10 +74,10 @@
                   <strong>47M+ <small>visits</small></strong>
                   <p>across Roblox experiences</p>
                 </article>
-                <article class="proof-card">
-                  <span>Former Lead Scripter</span>
-                  <strong class="proof-stat-stacked"><span class="proof-stat-number">3</span><small class="proof-stat-label">front page</small><small class="proof-stat-label">games</small></strong>
-                  <p>across a long timeline</p>
+                <article class="proof-card proof-card-years">
+                  <span>Writing code for</span>
+                  <strong>5 <small>years</small></strong>
+                  <p>across gameplay, systems, and live products</p>
                 </article>
               </div>
 
@@ -113,10 +113,13 @@
           <div class="three-up-grid">
             <article class="feature-card reveal">
               <span class="feature-icon">01</span>
-              <h3>Shipped across real Roblox projects</h3>
-              <p>
-                I have shipped features in playable Roblox games that reached real players and supported strong user adoption.
-              </p>
+              <h3>Diverse tooling &amp; production habits</h3>
+              <ul class="feature-bullet-list">
+                <li>Roblox-TS and Rojo workflows</li>
+                <li>Advanced data layers and player-state persistence</li>
+                <li>Debugging, optimization, and cleanup</li>
+                <li>Typed Luau, modular services, and clear APIs</li>
+              </ul>
             </article>
 
             <article class="feature-card reveal">
@@ -134,33 +137,6 @@
                 Regular updates, clear change logs, and technical decisions explained in a way clients and teammates can actually follow.
               </p>
             </article>
-          </div>
-        </section>
-
-        <section id="skills" class="content-section" data-track="scripting">
-          <div class="section-intro reveal">
-            <p class="section-number">03</p>
-            <h2>Skills</h2>
-          </div>
-
-          <div class="skills-panels">
-            <div class="skills-panel reveal">
-              <ul class="skill-list">
-                <li>Backend systems for progression loops, currencies, rewards, shops, quests, and unlock flows</li>
-                <li>Data and save architecture for inventories, placement, pets, rebirths, stats, and player-owned state</li>
-                <li>Client-server gameplay integration with remotes, validation, replication, and secure server authority</li>
-                <li>Live debugging across UI, gameplay, data loading, race conditions, and release-blocking edge cases</li>
-                <li>Optimization and cleanup for existing Roblox codebases without breaking shipped behavior</li>
-              </ul>
-            </div>
-
-            <div class="skills-panel reveal">
-              <ul class="skill-list">
-                <li>Advanced data layers: ProfileStore, resilient DataStore patterns, and player-state persistence</li>
-                <li>Tooling: Roblox-TS and Rojo</li>
-                <li>typed Luau, modular services, clear APIs, and readable handoff notes</li>
-              </ul>
-            </div>
           </div>
         </section>
 
@@ -287,7 +263,6 @@
         <section id="projects" class="content-section" data-track="scripting">
           <div class="section-intro reveal">
             <h2>Projects</h2>
-            <p class="section-copy">Selected work with in-site video demos.</p>
           </div>
 
           <div class="showcase-catalog">
@@ -353,6 +328,59 @@
                 </button>
               </div>
             </section>
+          </div>
+        </section>
+
+        <section id="services" class="content-section services-section" data-track="scripting">
+          <div class="section-intro reveal">
+            <p class="section-number">06</p>
+            <h2>Services</h2>
+          </div>
+
+          <div class="services-layout">
+            <article class="services-pricing reveal">
+              <p class="services-eyebrow">Starting prices</p>
+              <h3>Built around scope</h3>
+              <div class="pricing-list">
+                <div class="pricing-tier"><strong>$20<span> minimum</span></strong><p>small fixes, UI changes, and quality-of-life tasks</p></div>
+                <div class="pricing-tier"><strong>$40–80</strong><p>medium features, system extensions, and contained mechanics</p></div>
+                <div class="pricing-tier"><strong>$120+</strong><p>complex, connected gameplay systems and technical overhauls</p></div>
+              </div>
+              <div class="pricing-cadence">
+                <p><strong>Weekly</strong><span>from $160</span></p>
+                <p><strong>Monthly</strong><span>from $640</span></p>
+              </div>
+            </article>
+
+            <div class="systems-catalogue reveal">
+              <p class="services-eyebrow">What I can build</p>
+              <div class="systems-capability-grid">
+                <article class="system-capability">
+                  <h3>Movement, parkour &amp; vehicles</h3>
+                  <ul><li>Character controllers, sprinting, slides, and camera feedback</li><li>Vaults, mantles, wall traversal, and traversal states</li><li>Vehicle handling, suspension, spawning, and interactions</li></ul>
+                </article>
+                <article class="system-capability">
+                  <h3>Combat, abilities &amp; FPS</h3>
+                  <ul><li>M1 chains, damage, guards, hitboxes, and combat states</li><li>Ability kits, cooldowns, VFX hooks, and progression</li><li>Weapons, recoil, ballistics, projectiles, and reload flow</li></ul>
+                </article>
+                <article class="system-capability">
+                  <h3>NPC AI &amp; world generation</h3>
+                  <ul><li>Pathfinding, state machines, and enemy behavior</li><li>Shop, quest, encounter, and ambient NPC flows</li><li>World events, spawn systems, and procedural content</li></ul>
+                </article>
+                <article class="system-capability">
+                  <h3>Economy &amp; progression</h3>
+                  <ul><li>Inventories, equipment, trading, and player-owned state</li><li>Shops, currencies, crafting, and upgrade loops</li><li>Quests, rewards, rebirths, ranks, and unlocks</li></ul>
+                </article>
+                <article class="system-capability">
+                  <h3>Multiplayer &amp; frameworks</h3>
+                  <ul><li>Queues, lobbies, rounds, teams, and party flow</li><li>Replication, remote design, and server-authoritative gameplay</li><li>Roblox-TS, Rojo, modular services, and reusable APIs</li></ul>
+                </article>
+                <article class="system-capability">
+                  <h3>Backend &amp; optimization</h3>
+                  <ul><li>ProfileStore, data persistence, migrations, and recovery patterns</li><li>Server validation, anti-exploit safeguards, and live diagnostics</li><li>Performance profiling, cleanup, and reliable update support</li></ul>
+                </article>
+              </div>
+            </div>
           </div>
         </section>
 
@@ -552,20 +580,24 @@
           <div class="section-intro reveal">
             <p class="section-number">07</p>
             <h2>Contact</h2>
-            <p class="section-copy">Reach out for Roblox scripting, systems work, backend implementation, or web projects.</p>
           </div>
 
-          <div class="contact-grid reveal">
-            <a class="contact-card" href="https://discord.com/users/863377260055887882" target="_blank" rel="noreferrer">
-              <i class="brand-icon brand-icon-discord" aria-hidden="true"></i>
-              <span>Discord</span>
-              <strong>Ren</strong>
-            </a>
-            <a class="contact-card" href="https://github.com/rendevvit" target="_blank" rel="noreferrer">
-              <i class="brand-icon brand-icon-github" aria-hidden="true"></i>
-              <span>GitHub</span>
-              <strong>Ren</strong>
-            </a>
+          <div class="contact-layout reveal">
+            <div class="contact-grid">
+              <a class="contact-card" href="https://discord.com/users/863377260055887882" target="_blank" rel="noreferrer">
+                <i class="brand-icon brand-icon-discord" aria-hidden="true"></i>
+                <span>Discord</span>
+                <strong>Ren</strong>
+              </a>
+              <a class="contact-card" href="https://github.com/rendevvit" target="_blank" rel="noreferrer">
+                <i class="brand-icon brand-icon-github" aria-hidden="true"></i>
+                <span>GitHub</span>
+                <strong>Ren</strong>
+              </a>
+            </div>
+            <figure class="contact-profile-showcase">
+              <img src="assets/contact/discord-profile.png" alt="Ren's Discord profile" loading="lazy" decoding="async" />
+            </figure>
           </div>
         </section>
       </main>
