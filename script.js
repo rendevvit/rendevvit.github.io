@@ -445,7 +445,7 @@ modeButtons.forEach((button) => {
   });
 });
 
-applyPortfolioMode("scripting");
+applyPortfolioMode(document.body.dataset.mode === "programming" ? "programming" : "scripting");
 
 const openSystemsModal = (systemKey) => {
   const system = systemsData[systemKey];
